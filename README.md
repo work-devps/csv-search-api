@@ -25,7 +25,7 @@ A high performance API based on FASTAPI to search large CSV datasets with filter
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/csv-search-api.git
+git clone https://github.com/work-devps/csv-search-api.git
 cd csv-search-api
 
 # Build the image
@@ -40,54 +40,54 @@ http://localhost:8000/docs (Swagger UI)
 ```
 ### Ready to Test query examples
 1. Search by query (name match)
-org_name: PeopleInc
-query: Nikita
+-org_name: PeopleInc
+-query: Nikita
 
-✔ Returns employees named "Nikita" from PeopleInc.
+✔ Returns employees named "Nikita" from PeopleInc.  
 
 
 
 2. Filter by status and department
-org_name: TechCorp
-status: terminated
-department: Engineering
+-org_name: TechCorp
+-status: terminated
+-department: Engineering
 
-✔ Returns terminated employees in Engineering (e.g., Dinesh Kumar).
+✔ Returns terminated employees in Engineering (e.g., Dinesh Kumar).  
 
 
 
 3. Search and filter by position
-org_name: SellWell
-query: Amit
-position: Lead
+-org_name: SellWell
+-query: Amit
+-position: Lead
 
-✔ Returns "Amit Jain", Lead at SellWell.
+✔ Returns "Amit Jain", Lead at SellWell.  
 
 
 
 4. Filter by company and status
-org_name: GrowMore
-company: Capgemini
-status: active
+-org_name: GrowMore
+-company: Capgemini
+-status: active
 
-✔ Returns active employees at Capgemini under GrowMore.
+✔ Returns active employees at Capgemini under GrowMore.  
 
 
 
 5. Multiple filters together
-org_name: GrowMore
-query: Neha
-position: Executive
-status: terminated
+-org_name: GrowMore
+-query: Neha
+-position: Executive
+-status: terminated
 
-✔ Returns “Neha Verma”, a terminated Executive at GrowMore.
+✔ Returns “Neha Verma”, a terminated Executive at GrowMore.  
 
 
 
 6. Test pagination with query
-org_name: GrowMore
-query: Reddy
-page: 1
-page_size: 2
+-org_name: GrowMore
+-query: Reddy
+-page: 1
+-page_size: 2
 
-✔ Returns page 1 of results with people whose last name is Reddy.
+✔ Returns page 1 of results with people whose last name is Reddy.  
